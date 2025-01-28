@@ -20,4 +20,6 @@ dependencies {
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.11.0")
     implementation("com.squareup.retrofit2:converter-moshi:2.11.0")
+    // Corrutinas
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.1")
 }
