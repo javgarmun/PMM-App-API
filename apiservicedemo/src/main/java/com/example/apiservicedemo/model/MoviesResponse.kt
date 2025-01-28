@@ -1,8 +1,10 @@
 package com.example.apiservicedemo.model
 
+import com.squareup.moshi.Json
+
 data class MoviesResponse(
-    val page: Int,
-    val total_pages: Int,
-    val total_results: Int,
-    val results: List<Movie>,
+    @Json(name = "page") val page: Int = 1,
+    @Json(name = "total_pages") val total_pages: Int = 0,
+    @Json(name = "total_results") val total_results: Int = 0,
+    @Json(name = "results") val results: List<Movie>,
 )
